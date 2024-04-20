@@ -1,0 +1,52 @@
+<section class="container about">
+    <p class="about_paragraph">
+        <form id="crud-form" action="/index.php" name="crud" method="post">
+            <h2 class="subtitle">Inicia tu Solicitud</h2>
+            
+            <label for="identification">Identificación:</label>
+            <input type="text" id="identification" name="Identificacion" placeholder="Identificacion" required><br>
+            
+            <label for="first-name">Nombres:</label>
+            <input type="text" id="first-name" name="Nombres" placeholder="Nombres" required><br>
+            
+            <label for="last-name">Apellidos:</label>
+            <input type="text" id="last-name" name="Apellidos" placeholder="Apellidos" required><br>
+            
+            <label for="income">Ingresos Mensuales ($):</label>
+            <input type="text" id="income" name="Ingresos" placeholder="Ingresos" required><br>
+            
+            <label for="franchise">Franquicia Deseada:</label>
+            <input type="text" id="franchise" name="Franquicia" placeholder="Franquicia" required><br>
+            
+            <label for="amount">Monto Requerido ($):</label>
+            <input type="text" id="amount" name="Monto" placeholder="Monto" required><br>
+            
+            <label for="card-type">Tipo Tarjeta:</label>
+            <input type="text" id="card-type" name="Tarjeta" placeholder="Tarjeta" required><br>
+            
+            <button type="submit" name="registro">Agregar</button>
+            
+        </form>
+    </p>
+
+    <div id="crud-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Identificacion</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Ingresos Mensuales ($)</th>
+                    <th>Franquicia Deseada</th>
+                    <th>Monto Requerido ($)</th>
+                    <th>Tipo Tarjeta</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Aquí se mostrarán los registros -->
+            </tbody>
+        </table>
+    </div>
+    <script src="javascript.js"></script>
+</section>
